@@ -1,0 +1,97 @@
+
+地址端口要可配置
+192.168.3.107:8888
+
+/* 修改单条资产 */
+/balance/one
+
+//请求实例
+{
+	"source": 1,
+	"change": {
+		"uid": 1,
+		"methodBalance": "add",
+		"balance": "123",
+		"methodFrozenBalance": "add",
+		"frozenBalance": "0",
+		"symbol":"货币",
+		"signId":"标示id"
+	},
+	"pushTime":1000,
+	"mold":"操作模版",
+	"cont": "提币",
+	"hashId":"哈希id[唯一]"
+
+}
+
+//参数说明
+source 来源 1后端 2后台 3定时任务
+change 用户资产的变动
+change-methodBalance #资产变动操作 add加 sub减 mul乘 quo除法
+change-balance #资产变动值
+change-symbol #货币类型
+change-methodFrozenBalance #冻结资产变动操作 add加 sub减 mul乘 quo除法
+change-frozenBalance #冻结资产变动值
+change-signId #标示id
+pushTime #时间 单位毫秒
+mold #操作模版
+cont #说明
+hashId #哈希id
+
+
+//响应
+{"code":1,"balances":null,"msg":"请求异常"}
+code 0 正常 1异常
+msg 异常说明
+balance 结构 ==>
+{"uid":1,"symbol":"货币1","balance":"123.00000000","frozenBalance":"0.00000000"}
+
+
+/* 修改多条资产 */
+/balance/multi
+
+//请求实例
+{
+	"source": 1,
+	"changes": [{
+		"uid": 1,
+		"methodBalance": "add",
+		"balance": "123",
+		"methodFrozenBalance": "add",
+		"frozenBalance": "0",
+		"symbol": "货币2",
+		"signId":"标示id"
+	}, {
+		"uid": 1,
+		"methodBalance": "add",
+		"balance": "123",
+		"methodFrozenBalance": "add",
+		"frozenBalance": "0",
+		"symbol": "货币1",
+		"signId":"标示id"
+	}],
+	"pushTime":1000,
+	"mold":"操作模版",
+	"cont": "提币",
+	"hashId":"哈希id[唯一]"
+}
+
+source 来源 1后端 2后台 3定时任务
+changes 用户资产的变动[列表]
+changes-methodBalance #资产变动操作 add加 sub减 mul乘 qup除法
+changes-balance #资产变动值
+changes-symbol #货币类型
+changes-methodFrozenBalance #冻结资产变动操作 add加 sub减 mul乘 qup除法
+changes-frozenBalance #冻结资产变动值
+change-signId #标示id
+pushTime #时间 单位毫秒
+mold #操作模版
+cont #说明
+hashId #哈希id[唯一]
+
+//响应
+{"code":1,"balances":null,"msg":"请求异常"}
+code 0 正常 1异常
+msg 异常说明
+balances 结构(列表) ==>
+[{"uid":1,"symbol":"货币1","balance":"123.00000000","frozenBalance":"0.00000000"}]

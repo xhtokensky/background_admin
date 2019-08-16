@@ -1,0 +1,68 @@
+# github.com/astaxie/beego v1.11.1
+github.com/astaxie/beego
+github.com/astaxie/beego/plugins/cors
+github.com/astaxie/beego/orm
+github.com/astaxie/beego/context
+github.com/astaxie/beego/toolbox
+github.com/astaxie/beego/cache
+github.com/astaxie/beego/cache/redis
+github.com/astaxie/beego/logs
+github.com/astaxie/beego/config
+github.com/astaxie/beego/context/param
+github.com/astaxie/beego/grace
+github.com/astaxie/beego/session
+github.com/astaxie/beego/utils
+# github.com/go-sql-driver/mysql v1.4.1
+github.com/go-sql-driver/mysql
+# github.com/gomodule/redigo v2.0.0+incompatible
+github.com/gomodule/redigo/redis
+github.com/gomodule/redigo/internal
+# github.com/google/go-querystring v1.0.0
+github.com/google/go-querystring/query
+# github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1
+github.com/gopherjs/gopherjs/js
+# github.com/jtolds/gls v4.20.0+incompatible
+github.com/jtolds/gls
+# github.com/levigross/grequests v0.0.0-20190130132859-37c80f76a0da
+github.com/levigross/grequests
+# github.com/qiniu/api.v7 v7.2.5+incompatible
+github.com/qiniu/api.v7/auth/qbox
+github.com/qiniu/api.v7/storage
+github.com/qiniu/api.v7/conf
+# github.com/qiniu/x v7.0.8+incompatible
+github.com/qiniu/x/bytes.v7/seekable
+github.com/qiniu/x/bytes.v7
+github.com/qiniu/x/reqid.v7
+github.com/qiniu/x/xlog.v7
+# github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d
+github.com/smartystreets/assertions
+github.com/smartystreets/assertions/internal/go-render/render
+github.com/smartystreets/assertions/internal/oglematchers
+# github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
+github.com/smartystreets/goconvey/convey
+github.com/smartystreets/goconvey/convey/reporting
+github.com/smartystreets/goconvey/convey/gotest
+# github.com/thedevsaddam/gojsonq v2.2.2+incompatible
+github.com/thedevsaddam/gojsonq
+# github.com/zwczou/jpush v0.0.0-20180527005611-a5e77e351698
+github.com/zwczou/jpush
+# golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2 => github.com/golang/crypto v0.0.0-20190411191339-88737f569e3a
+golang.org/x/crypto/acme/autocert
+golang.org/x/crypto/acme
+# golang.org/x/net v0.0.0-20190311183353-d8887717615a => github.com/golang/net v0.0.0-20190415214537-1da14a5a36f2
+golang.org/x/net/context
+golang.org/x/net/publicsuffix
+# google.golang.org/appengine v0.0.0-00010101000000-000000000000 => github.com/golang/appengine v1.5.0
+google.golang.org/appengine/cloudsql
+# gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+gopkg.in/mgo.v2
+gopkg.in/mgo.v2/bson
+gopkg.in/mgo.v2/internal/sasl
+gopkg.in/mgo.v2/internal/scram
+gopkg.in/mgo.v2/internal/json
+# gopkg.in/yaml.v2 v2.2.1 => github.com/go-yaml/yaml v2.1.0+incompatible
+gopkg.in/yaml.v2
+# qiniupkg.com/x v7.0.8+incompatible
+qiniupkg.com/x/bytes.v7
+qiniupkg.com/x/log.v7
+qiniupkg.com/x/reqid.v7
